@@ -1,7 +1,39 @@
+---
 title: 清单
 date: 2015-07-09 14:06:35
+layout: page
+permalink: /about/
+published: false
 ---
 # 清单
+
+
+## 职业
+PHP Developer
+
+## 一些感想
+
+人生苦短，做点有意思的事情吧~~
+
+说了是什么后，再说点为什么那就更美了。
+
+## 兴趣、爱好
+
+
+## 关注点
+
+程序语言
+
+
+
+## 撸过的代码
+1. [yii2 造个rss的轮子 ][yii2-rss]
+
+[yii2-rss]: https://github.com/noname007/learn-yii2
+
+
+
+
 ### 接触过的语言、技术 统计表 
 
 时间格式意思:`第一次接接触--->感觉有点意思`
@@ -63,5 +95,6 @@ date: 2015-07-09 14:06:35
 9. [docker技术入门与实战](https://yeasy.gitbooks.io/docker_practice/content/)  `2015.12` 不错的入门书籍，基本概念讲解的很清晰
 9. Haskell函数式编程基础 `2015.12--`
 10. 
+
 
 
