@@ -16,20 +16,28 @@
 title: soul11201
 email: soul11201@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-# dlsfaslkd
+  笔记、吐槽、非客观
 # Write an awesome description for your new site here. You can edit this
 # line in _config.yml. It will appear in your document head meta (for
 # Google search results) and in your feed.xml site description.
 
 baseurl:  # the subpath of your site, e.g. /blog
 url: "http://blog.soul11201.com" # the base hostname & protocol for your site
-# twitter_username:  soul11201
-# github_username:  noname007
+
+author: soul11201
+
+
+
+lang: zh_CN
+
+twitter_username:  soul11201
+github_username:  noname007
 # Build settings
 markdown: kramdown
 theme: minima
 gems:
   - jekyll-feed
+  - jekyll-seo-tag
 exclude:
   - Gemfile
   - Gemfile.lock
