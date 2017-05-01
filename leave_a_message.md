@@ -5,7 +5,6 @@ permalink: /leave-a-message/
 id: /leave-a-message/
 ---
 
-## 做有争议的人，写有争议的文章
 
 欢迎通过以下方式交流。小密圈、微信公众号 or E-mail 
 
