@@ -14,10 +14,10 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: soul11201
-email: 
+#email: soul11201@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  笔记、吐槽、非客观
-  echo c291bDExMjAxQGdtYWlsLmNvbQo= | base64 -d
+    coder 随想录
+#  笔记、吐槽、非客观
 # Write an awesome description for your new site here. You can edit this
 # line in _config.yml. It will appear in your document head meta (for
 # Google search results) and in your feed.xml site description.
@@ -31,7 +31,7 @@ author: soul11201
 
 lang: zh_CN
 
-twitter_username:  soul11201
+#twitter_username:  soul11201
 github_username:  noname007
 # Build settings
 markdown: kramdown

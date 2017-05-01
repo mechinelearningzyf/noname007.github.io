@@ -26,9 +26,9 @@ published: true
 
 curl -sSL https://rvm.io/mpapis.asc | gpg --import -
 
-curl -L https://raw.githubusercontent.com/wayneeseguin/rvm/master/binscripts/rvm-installer  | bash -s stable --ruby  
+curl -sSL https://get.rvm.io | bash -s stable
 
-sudo apt-get sudo apt-get install nodejs
+sudo apt-get install nodejs
 
 {%endhighlight%}
 
@@ -53,14 +53,14 @@ ruby dk.rb install
 
 - 换成国内的gem源
 
-
-	`gem sources --add http://gems.ruby-china.org/ --remove https://rubygems.org/ -V`
-
-
-	`gem install liquid kramdown jekyll pygments.rb`
-
-
+```shell
+gem sources --add http://gems.ruby-china.org/ --remove https://rubygems.org/ -V
+gem install liquid kramdown jekyll pygments.rb bundler
+ bundler install
+```
 ## 参考
+
+- http://ruby-china.org/wiki/rvm-guide
 
 - http://blog.csdn.net/fnzsjt/article/details/41729463
 
