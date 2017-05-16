@@ -30,11 +30,20 @@ author: soul11201
 
 lang: zh_CN
 
+
+# _config.yaml
+graphviz:
+  options: "-v -Tsvg" # 'dot' command option
+  executable: "C:/Program Files (x86)/Graphviz2.38/bin/dot.exe"   # execute this string. specify full path to 'dot' if you need
+
 #twitter_username:  soul11201
 github_username:  noname007
 # Build settings
 markdown: kramdown
 theme: minima
+
+seo: false
+
 gems:
   - jekyll-feed
   - jekyll-seo-tag
