@@ -24,6 +24,8 @@ permalink: /links/
 
 [且听书吟](https://yufan.me)
 
+[Scholer's Blog](http://0x1.im/)
+
 ## 社区
 
 1. [Openresty China](https://orchina.org/)
