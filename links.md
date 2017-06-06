@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 链接
+title: 传播有价值的内容
 permalink: /links/
 ---
 
@@ -26,7 +26,7 @@ permalink: /links/
 
 ## 社区
 
-1. https://orchina.org/
+1. [Openresty China](https://orchina.org/)
     + 糖果老师的宏伟目标
 
 ## googlegroups 邮件列表
@@ -34,10 +34,10 @@ permalink: /links/
 表发一封邮件到邮箱，根据回复邮件的提示，即可轻松加入。
 
 1. Lua框架&应用交流
-    - lua-openresty-orange+subscribe@googlegroups.com 
+    - <a href="lua-openresty-orange+subscribe@googlegroups.com">lua-openresty-orange+subscribe@googlegroups.com</a> 
     - openresty 上的框架和应用，包括但不限于lor,orange
 2. openresty中文社区
-   - openresty+subscribe@googlegroups.com
+   - <a href="openresty+subscribe@googlegroups.com">openresty+subscribe@googlegroups.com</a>
    - 100%  有价值的技术讨论社区
 
 
