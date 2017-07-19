@@ -23,6 +23,7 @@ title:  "$title"
 date:   $date_time +0800
 categories: notes
 published: true
+author: soul11201
 ---
 * 目录
 {:toc}

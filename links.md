@@ -4,7 +4,7 @@ title: 传播有价值的内容
 permalink: /links/
 ---
 
-## 好友
+## 链接
 
 - [koihik's](http://koihik.github.io)
 
@@ -12,19 +12,17 @@ permalink: /links/
 
 - [行走的轮子](http://jerkybible.com/)
 
-## 链接
+- [yinwang](http://www.yinwang.org/)
 
-[yinwang](http://www.yinwang.org/)
+- [刘沙](https://liusha.me/page/2/)
 
-[刘沙](https://liusha.me/page/2/)
+- [糖果杂货铺](http://lua.ren/)
 
-[糖果杂货铺](http://lua.ren/)
+- [杂烩饭](http://sumory.com)
 
-[杂烩饭](http://sumory.com)
+- [且听书吟](https://yufan.me)
 
-[且听书吟](https://yufan.me)
-
-[Scholer's Blog](http://0x1.im/)
+- [Scholer's Blog](http://0x1.im/)
 
 ## 社区
 
