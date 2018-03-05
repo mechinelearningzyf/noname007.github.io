@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 传播有价值的内容
+title: Links
 permalink: /links/
 ---
 
