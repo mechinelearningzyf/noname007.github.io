@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Laravel Eloquent Builder 的一次使用分析"
+title:  "Laravel Eloquent Builder 的使用、源码简单分析总结"
 date:   2018-04-03 20:10:37 +0800
 categories: notes
 tags:
@@ -164,7 +164,7 @@ where
 
 $replied_root_ids = [10, 11, 12];
 
-
+//获取一个 \Illuminate\Database\Eloquent\Builder 实例
 $query = \App\Model\Comment::query();
 
 $query->where('content','知识')
@@ -195,8 +195,117 @@ foreach ($replied_root_ids as $replied_root_id) {
 ```
 
 
-## 执行流程
-上面代码的时序流程大概如下：
+## 执行流程分析
 
-Eloquent 的model 驱动`\Illuminate\Database\Eloquent\Builder`（ @mixin `\Illuminate\Database\Query\Builder`）和更底层的`\Illuminate\Database\Connection`进行交互，访问SQL。
 
+### `\Illuminate\Database\Eloquent\Builder::where()`
+
+```php
+    /**
+     * Add a basic where clause to the query.
+     *
+     * @param  string|array|\Closure  $column
+     * @param  string  $operator
+     * @param  mixed  $value
+     * @param  string  $boolean
+     * @return $this
+     */
+    public function where($column, $operator = null, $value = null, $boolean = 'and')
+    {
+        if ($column instanceof Closure) {
+            // 返回一个新的 Eloquent Builder
+            $query = $this->model->newQueryWithoutScopes();
+            //匿名函数调用，
+            //当 where 条件有复杂的条件表达式的时候
+            //比如解决上面 表达式中 (from_user_name = 'soul11201' or to_user_name = 'soul11201') or 优先级的问题
+            //直接使用 where() 无法解决，只能使用一个新的Builder来嵌入到原先的Builder中
+            $column($query);
+            //$this->query 是类 \Illuminate\Database\Query\Builder 的实例
+            //将新的 Eloquent builder 的 Query\Builder 最为一个整体嵌入到原先Eloquent Builder的 `Query\Builder`的where表达式中，
+            //就可以解决上面 or 优先级的问题
+            $this->query->addNestedWhereQuery($query->getQuery(), $boolean);
+        } else {
+            $this->query->where(...func_get_args());
+        }
+
+        return $this;
+    }
+```
+
+### mixin
+因为 `\Illuminate\Database\Eloquent\Builder` mixin 类`\Illuminate\Database\Query`
+
+`\Illuminate\Database\Eloquent\Builder::count()`
+`\Illuminate\Database\Eloquent\Builder::orderby()`
+`\Illuminate\Database\Eloquent\Builder::limit()`
+
+都是利用魔术方法`__call`间接使用的`\Illuminate\Database\Query`的方法
+
+```php
+    /**
+     * The base query builder instance.
+     *
+     * @var \Illuminate\Database\Query\Builder
+     */
+    protected $query;
+    
+    ...
+     此处省略
+    ...
+    
+    public function __call($method, $parameters)
+    {
+        ...
+        此处省略
+        ...
+        $this->query->{$method}(...$parameters);
+
+        return $this;
+    }
+
+```
+### `\Illuminate\Database\Eloquent\Builder::get()`
+
+
+`\Illuminate\Database\Eloquent\Builder` 是 `\Illuminate\Database\Eloquent\Model`子类 与`\Illuminate\Database\Query\Builder` 沟通的桥梁。其中一个作用就是对`\Illuminate\Database\Query\Builder`查询的数组结果(由`\Illuminate\Support\Collection`进行包裹)渲染成`\Illuminate\Database\Eloquent\Model`子类的对象数组结果(由`\Illuminate\Database\Eloquent\Collection`进行包裹)。
+
+
+```php
+    /**
+     * Execute the query as a "select" statement.
+     *
+     * @param  array  $columns
+     * @return \Illuminate\Database\Eloquent\Collection|static[]
+     */
+    public function get($columns = ['*'])
+    {
+        //应用其他注入构造条件
+        $builder = $this->applyScopes();
+
+        // If we actually found models we will also eager load any relationships that
+        // have been specified as needing to be eager loaded, which will solve the
+        // n+1 query issue for the developers to avoid running a lot of queries.
+        if (count($models = $builder->getModels($columns)) > 0) {
+            $models = $builder->eagerLoadRelations($models);
+        }
+
+        return $builder->getModel()->newCollection($models);
+    }
+
+     /**
+     * Get the hydrated models without eager loading.
+     *
+     * @param  array  $columns
+     * @return \Illuminate\Database\Eloquent\Model[]
+     */
+    public function getModels($columns = ['*'])
+    {
+        return $this->model->hydrate(
+            $this->query->get($columns)->all()
+        )->all();
+    }
+```
+
+## `\Illuminate\Database\Eloquent\Collection::all()` 、`Illuminate\Support\Collection::all()`
+
+`\Illuminate\Database\Eloquent\Collection` 是`Illuminate\Support\Collection`的子类，`all()`方法指向的是同一个方法，直接返回其所包裹的数组。
