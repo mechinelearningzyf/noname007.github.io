@@ -306,6 +306,6 @@ foreach ($replied_root_ids as $replied_root_id) {
     }
 ```
 
-## `\Illuminate\Database\Eloquent\Collection::all()` 、`Illuminate\Support\Collection::all()`
+### `Illuminate\Support\Collection::all()`
 
 `\Illuminate\Database\Eloquent\Collection` 是`Illuminate\Support\Collection`的子类，`all()`方法指向的是同一个方法，直接返回其所包裹的数组。
