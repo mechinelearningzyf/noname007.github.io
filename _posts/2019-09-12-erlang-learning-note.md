@@ -12,7 +12,8 @@ published: true
 
 #### 资料
 
-- [programming erlang e2 源码](https://github.com/noname007/erlang-programming-e2)
+- [Erlang 编程语言  第二版](https://erldoc.com/doc/pdf/Erlang%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1(%E7%AC%AC2%E7%89%88).pdf)
+- [Erlang  编程语言 第二版 书籍源码](https://github.com/noname007/erlang-programming-e2)
 - [Erlang/OTP 中文手册](https://erldoc.com/)
 
 
