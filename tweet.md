@@ -2,8 +2,18 @@
 layout: tweet
 title: tweet
 permalink: /tweet/
-published: false
+published: published
 ---
+
+
+*Sun Sep 29 20:34:46 CST 2019*
+引用透明性 & 可重入性
+
+[引用透明，最初是个数学概念，表示在同一作用域内，相同表达式的值相同](https://www.zhihu.com/question/52147030/answer/274972772)
+
+[引用透明是指，在作用域内，x是多少，就永远是多少，所有引用x的表达式]( https://www.zhihu.com/question/52147030/answer/129190223)
+
+`如果一个函数的输入相同，对应的计算结果也相同，那么它就具备「引用透明性」`  貌似是可重入性
 
 *2016.08.08*
 如果看起来是只鸭子，那就当成一只鸭子对待。
