@@ -6,6 +6,9 @@ published: published
 ---
 
 
+*2019.11.11*
+ldap 验证用户密码是否正确，需要使用 upn  或者 dn 作为用户名 https://github.com/Adldap2/Adldap2-Laravel/issues/580
+
 *Sun Sep 29 20:34:46 CST 2019*
 引用透明性 & 可重入性
 

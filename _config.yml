@@ -32,9 +32,9 @@ lang: zh_CN
 
 
 # _config.yaml
-graphviz:
-  options: "-v -Tsvg" # 'dot' command option
-  executable: "C:/Program Files (x86)/Graphviz2.38/bin/dot.exe"   # execute this string. specify full path to 'dot' if you need
+#graphviz:
+#  options: "-v -Tsvg" # 'dot' command option
+#  executable: "C:/Program Files (x86)/Graphviz2.38/bin/dot.exe"   # execute this string. specify full path to 'dot' if you need
 
 twitter_username:  soul11201
 github_username:  noname007
@@ -42,7 +42,7 @@ github_username:  noname007
 markdown: kramdown
 theme: minima
 
-# seo: true
+seo: true
 
 plugins:
   - jekyll-feed
