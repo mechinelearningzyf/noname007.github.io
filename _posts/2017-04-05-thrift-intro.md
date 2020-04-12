@@ -3,6 +3,7 @@ layout: post
 title:  "thrift 入门学习 笔记"
 date:   2017-04-05 13:44:12 +0800
 categories: notes
+tags: [thrift,总结]
 published: true
 description: thrif 笔记
 ---

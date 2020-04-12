@@ -4,7 +4,7 @@ title:  "window 10 中安装Ubuntu"
 date:   2016-12-15 12:45:23 +0800
 categories:
 - notes
-- cookbook
+tags: [windows subsystem, 总结]
 published: true
 ---
 * 目录

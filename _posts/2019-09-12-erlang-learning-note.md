@@ -2,6 +2,8 @@
 layout: post
 title:  Erlang 学习笔记
 date:   2019-09-12 20:22:36 +0800
+categories: [notes]
+tags: [erlang,笔记]
 published: true
 ---
 

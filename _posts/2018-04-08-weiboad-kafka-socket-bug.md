@@ -4,12 +4,13 @@ title:  "weiboad-kafka-socket-bug"
 date:   2018-04-08 12:19:47 +0800
 categories: notes
 tags:
+- 调试
 - weiboad/kafka
 - bug
 - kafka
 - php
 - socket
-published: false
+published: true
 author: soul11201
 ---
 * 目录

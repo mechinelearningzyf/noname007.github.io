@@ -3,6 +3,7 @@ layout: post
 title:  "编译原理-几道考试题"
 date:   2017-05-15 14:30:26 +0800
 categories: notes
+tags: [编译原理, 练习]
 published: true
 ---
 * 目录

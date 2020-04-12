@@ -3,6 +3,7 @@ layout: post
 title:  "对评论系统设计的一点总结"
 date:   2018-03-22 20:15:26 +0800
 categories: notes
+tags: [反思]
 published: true
 author: soul11201
 ---

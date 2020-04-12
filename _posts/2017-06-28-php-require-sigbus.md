@@ -6,8 +6,8 @@ categories: notes
 published: true
 tags:
 - php
-- system call
-- c
+- bug 分析
+- 信号
 author: soul11201
 ---
 

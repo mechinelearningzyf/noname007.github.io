@@ -5,6 +5,8 @@ date:   2017-02-22 17:28:45 +0800
 
 tags:
 - systemstap 
+- 调试
+- 总结
 
 categories: notes
 published: true

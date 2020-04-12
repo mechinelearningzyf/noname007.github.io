@@ -6,8 +6,6 @@ categories: notes
 tags:
 - php
 - Laravel
-- Eloquent
-- Builder
 published: true
 author: soul11201
 ---
