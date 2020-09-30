@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  common lisp macro
+title:  common lisp - macro
 date:   2020-07-05 19:15:44 +0800
 tags: [common lisp, macro]
 ---
