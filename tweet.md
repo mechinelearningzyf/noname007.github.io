@@ -5,6 +5,9 @@ permalink: /tweet/
 published: published
 ---
 
+*<2020-10-16 Fri>*
+打的一拳开，免得百拳来
+
 
 *2019.11.11*
 ldap 验证用户密码是否正确，需要使用 upn  或者 dn 作为用户名 https://github.com/Adldap2/Adldap2-Laravel/issues/580
