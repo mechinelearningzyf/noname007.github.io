@@ -6,8 +6,10 @@ date:   2020-11-16 17:42:08 +0800
 
 
 ``` shell
+#处理基础环境依赖
 yum -y install php70w-ldap.x86_64
 
+#处理配置
 #composer install -vvv --no-dev
 composer install -vvv
 cp config/db.prod.php config/db.php
@@ -17,6 +19,7 @@ cp config/params.prod.php config/params.php
 #sed -i '4,5s/^/#/g' web/index.php
 #sed -i '10,12s/^/#/g' yii
 
+#适配CI系统
 mv web htdocs
 mkdir build
 
@@ -26,6 +29,7 @@ tar -zcvf yii2.tar.gz build
 mv yii2.tar.gz  build/
 
 
+# IM 通知
 function wechatwrok_bot() {
     echo "$1"  | xargs -I {} curl -s  -v 'https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=filled-with-your-wxwork-bot-key' -H 'Content-Type: application/json' -d '{ "msgtype": "text",  "text": {"content": "{}"}}'
 }
