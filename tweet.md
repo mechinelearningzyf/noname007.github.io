@@ -2,8 +2,28 @@
 layout: tweet
 title: tweet
 permalink: /tweet/
-published: published
+#published: published
+published: false
 ---
+
+## *<2020-11-24 二>* ##
+
+解决: LDAP-Unable to bind to server: Can't contact LDAP server 
+
+https://zhuanlan.zhihu.com/p/32399005
+
+## *<2020-11-22 日>* ##
+
+
+今天备份照片，在想云盘给我备份的视频有原图和压缩两种，我在想一个什么样的结果，心里才会是你个让我比较满意的结果？
+
+前些年用备份照片的时候，晕头转向的备份了一些照片，但是压缩的特别厉害，后来再看的时候，简直无法忍受，所以我就一直想着最好能原图给我备份，这是最好的，就是不失真，所谓的不失真，就是我的原始图片是什么就是什么，不要在我的照片上做一些额外的操作，这种行为很让人讨厌。有点那种到此一游的感觉，自以为很聪明，乱涂乱画，搞得很心烦。
+
+图片质量、图片拍摄日期、GPS等照片里面的原始信息也不要给我乱改动，有时候copy的时候，照片的原始信息可能也会丢掉，比如创建时间、修改时间等一些文件的元信息被修改了，当然对看图片影响不大，但是也让人讨厌，总感觉丢失了些什么。其实也可以说有点吹毛求疵，但是我就是这么追求原汁原味，不失真。
+
+为什么呢？
+
+
 
 ## *<2020-11-20 五>* ##
 
@@ -14,6 +34,20 @@ published: published
 ### base64 encode jpeg images ###
 
 `sed 's/^.\{23\}//g' base64_encoded_jpeg.txt|base64 -d >origin.jpeg`
+
+`key="";redis-cli -n 2 -h m1124-p 11240 get ${key}|sed 's/^.\{23\}//g'|base64 -d >origin.jpeg`
+
+
+`usercode=;redis-cli -n 2 -h m1 -p 11240 get photo::10000000${key}|sed 's/^.\{23\}//g'|base64 -d >${key}.jpeg`
+
+
+
+key=;redis-cli -n 2 -h  -p 11240 get photo::${key}|sed 's/^.\{23\}//g'|base64 -d >${key}.jpeg
+
+key=;redis-cli -n 2 -h m12. -p 11240 get photo::${key}|sed 's/^.\{23\}//g'|base64 -d >${key}.jpeg
+
+key=;redis-cli -n 2 -h m1 -p 11240 get photo::${key}|sed 's/^.\{23\}//g'|base64 -d >${key}.jpeg
+
 
 ## *<2020-10-22 四>* ##
 
