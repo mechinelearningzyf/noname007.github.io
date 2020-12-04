@@ -41,7 +41,7 @@ github_username:  noname007
 # Build settings
 markdown: kramdown
 #theme: minima
-theme: jekyll-theme-persephone
+#theme: jekyll-theme-persephone
 #theme: minimal-mistakes-jekyll
 
 seo: true
