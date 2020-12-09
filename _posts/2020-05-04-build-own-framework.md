@@ -3,10 +3,11 @@ layout: post
 title: 琐事、工具
 date: 2020-05-04 18:15:04 +0800
 tags:
- - 琐事
- - 工具
- - php
- - composer
+- 理念
+- 琐事
+- 工具
+- php
+- composer
 ---
 
 今天写了[几行代码](https://github.com/noname007/framework-over-yii2/commit/35a589fa6f6bc2b352ca3ce3b25b2ac2634f7a68)，基于对框架模板的管用习惯封装了一个更贴合自己习惯、用法的框架。
@@ -24,6 +25,8 @@ tags:
  简单问题标准化
  标准问题流程化
  流程问题配置化
+ 配置问题模板化
+ 模板问题工具化
  所有问题自动化
 ```
 
