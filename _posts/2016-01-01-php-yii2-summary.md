@@ -3,6 +3,7 @@ title: 使用yii2框架开发的一点总结
 layout: post
 tags:
   - 笔记
+  - php
 description: 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处
 date: 2016-03-08 15:44:50
 ---

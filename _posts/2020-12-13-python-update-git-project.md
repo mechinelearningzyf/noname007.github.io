@@ -3,8 +3,7 @@ layout: post
 title:  python 更新 git 项目
 date:   2020-12-13 13:48:56 +0800
 tags:
-- 工具
-- 工具化
+- 技术
 - python
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: 利用工具生成 dcron 任务 
 date: 2020-12-09 13:58:32 +0800
 tags: 
-- 工具化
+- 工具
 - rust
 ---
 
@@ -22,6 +22,7 @@ tags:
 - 结束常驻进程运行的程序 
 
 基于此提炼出如下 cron 命令模板
+
 
 ``` shell
 ps aux|grep \"php /opt/www/htdocs/{}/yii {}\"|grep -v 'grep' || (php /opt/www/htdocs/{}/yii {} >> /opt/www/logs/{}/{} 2>&1 &

@@ -2,7 +2,7 @@
 layout: page
 title: Tags
 permalink: /tags-cloud/
-published: true
+published: false
 ---
 
 <div class="blog-tags"> 

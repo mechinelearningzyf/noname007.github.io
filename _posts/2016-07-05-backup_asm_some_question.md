@@ -2,6 +2,8 @@
 layout: post
 title:  "微机原理学习-一些问题总结"
 date:    2012-12-15 17:40:40 +0800
+tags:
+- 汇编
 categories: 随笔
 published: true
 ---

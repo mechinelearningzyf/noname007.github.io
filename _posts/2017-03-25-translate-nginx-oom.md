@@ -7,6 +7,7 @@ categories:
 - translate
 
 tags:
+- 翻译
 - openresty
 - OOM
 - debug

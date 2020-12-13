@@ -1,4 +1,4 @@
-title: 对一次寻找大素数问题的思考
+title: 对一次寻找大素数问题的流水帐
 date: 2015-10-25 13:49:37
 mathjax: true
 tags:

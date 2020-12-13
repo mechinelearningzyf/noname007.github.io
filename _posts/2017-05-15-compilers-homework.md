@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "编译原理-几道考试题"
+title:  "编译原理-几个练习题"
 date:   2017-05-15 14:30:26 +0800
 categories: notes
-tags: [编译原理, 练习]
+tags: [编译原理, 练习, 技术]
 published: true
 ---
 * 目录

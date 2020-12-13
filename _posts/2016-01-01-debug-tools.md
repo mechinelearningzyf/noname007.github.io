@@ -3,6 +3,7 @@ title: 调试工具
 layout: post
 tags: 
 - gdb
+- 工具
 date: 2015-09-23 18:22:00
 ---
 

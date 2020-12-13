@@ -2,6 +2,12 @@
 layout: post
 title:  "korasaju算法的粗浅理解"
 date:   2013-04-29 12:14:28 +0800
+tags:
+- data structure
+- 算法
+- 数据结构
+- 总结
+
 categories: 
 ---
 

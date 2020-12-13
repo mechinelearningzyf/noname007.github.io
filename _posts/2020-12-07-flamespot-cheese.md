@@ -2,7 +2,8 @@
 layout: post
 title:  Linux 截图 拍照神器 flamespot 、 cheese
 date:   2020-12-07 11:25:37 +0800
-tags: 
+tags:
+- 技术
 - kde
 - plasma
 - flameshot
