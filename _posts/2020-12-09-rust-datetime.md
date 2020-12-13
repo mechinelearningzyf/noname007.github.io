@@ -2,6 +2,9 @@
 layout: post
 title:  rust datetime
 date:   2020-12-09 22:45:14 +0800
+tags:
+- rust
+- datetime
 ---
 
 https://docs.rs/chrono/0.4.19/chrono/
