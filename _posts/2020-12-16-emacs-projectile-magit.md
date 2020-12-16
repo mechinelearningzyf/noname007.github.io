@@ -17,6 +17,9 @@ tags:
 ```
 
 https://github.com/bbatsov/projectile
+
 https://vincent.demeester.fr/articles/emacs_projects.html
+
 https://endlessparentheses.com/improving-projectile-with-extra-commands.html
+
 https://www.reddit.com/r/spacemacs/comments/aibvd5/open_a_magit_buffer_for_a_projectile_project/
