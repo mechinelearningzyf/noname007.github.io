@@ -12,7 +12,7 @@ https://doc.rust-lang.org/cargo/reference/config.html
 DockerFile
 
 ``` dockerfile
-FROM registry.ke.com/docker-virtual/common/rust:1.48.0
+FROM rust:1.48.0
 
 WORKDIR /usr/src/myapp
 COPY . .
