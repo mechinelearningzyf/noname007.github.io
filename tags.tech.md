@@ -2,7 +2,7 @@
 layout: page
 title: 技术随笔
 permalink: /tags-techs-notes/
-published: true
+published: false
 ---
 
 <div class="blog-tags"> 
