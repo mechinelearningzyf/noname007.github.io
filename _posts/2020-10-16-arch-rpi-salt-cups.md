@@ -72,6 +72,11 @@ https://www.archlinux.org/packages/extra/x86_64/cups-pdf/
 
 
 ## Saltstacks 管理树莓派 ##
+
+[Learning SaltStack - Second Edition](https://www.packtpub.com/product/learning-saltstack-second-edition/9781785881909)
+
+
+
 ### 安装 Saltstacks###
 
 https://docs.saltstack.com/en/latest/topics/installation/index.html#quick-install

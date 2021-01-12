@@ -23,7 +23,7 @@ CMD ["isc-event-display"]
 ```
 
 
-`filename: docker_config`
+`filename: cargo_config`
 
 ```toml 
 [source.crates-io]
