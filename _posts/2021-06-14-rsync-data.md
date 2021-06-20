@@ -2,7 +2,7 @@
 layout: post
 title:  rsync-data
 date:   2021-06-14 15:44:35 +0800
-published: false
+published: true
 ---
 
 
