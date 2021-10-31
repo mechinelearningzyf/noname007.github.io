@@ -1,10 +1,17 @@
 ---
 layout: tweet
-title: tweet
+title: 只言片语
 permalink: /tweet/
 #published: published
-published: false
+published: true
 ---
+
+## *<2021-10-31 日>* ##
+
+`C-u C-c ! 使用当前时间插入非活动时间戳 org-time-stamp-inactive`
+
+
+阅读的最重要重要的功用就是学习新词，如果感觉没有任何收获但至少也可以收获一些文字词语。
 
 ## *<2020-11-24 二>* ##
 
