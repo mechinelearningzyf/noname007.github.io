@@ -6,6 +6,14 @@ permalink: /about/
 published: true
 ---
 
+# 为人莫苟且，时时要努力 #
+
+[红楼论武：清代曹寅家族的军功](http://www.chinawriter.com.cn/n1/2021/1029/c404063-32268404.html)
+
+# 心迹 #
+
+百善孝为先，论心不论迹，论迹贫家无孝子；万恶淫为首，论迹不论心，论心世上无完人
+
 # 微信公众号 #
 
 ![](/assets/wechat_mp.jpg){:height="300px" width="300px" align='center'}

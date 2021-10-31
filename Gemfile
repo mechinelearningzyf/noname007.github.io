@@ -26,3 +26,5 @@ end
 #gem "minimal-mistakes-jekyll"
 #gem "jekyll-theme-persephone"
 #gem 'jekyll-include-cache'
+
+gem "webrick", "~> 1.7"

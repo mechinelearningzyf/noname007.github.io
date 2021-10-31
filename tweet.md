@@ -13,6 +13,12 @@ published: true
 
 阅读的最重要重要的功用就是学习新词，如果感觉没有任何收获但至少也可以收获一些文字词语。
 
+
+youtube-dl - 为什么在bilibili上用youtube-dl只能下载第一集视频？ 
+https://www.coder.work/article/7568349
+https://github.com/iawia002/annie
+
+
 ## *<2020-11-24 二>* ##
 
 解决: LDAP-Unable to bind to server: Can't contact LDAP server 
