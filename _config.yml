@@ -13,9 +13,10 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Mr. Y
+title: y
 email: soul11201@gmail.com 
 description: > # this means to ignore newlines until "baseurl:"
+  alias y=yes;
 #    做有争议的人，写有争议的文章
 #  coder 随想录
 #  笔记、吐槽、非客观
@@ -48,7 +49,7 @@ seo: true
 
 plugins:
 #  - jekyll-include-cache
-  - jekyll-feed
+#  - jekyll-feed
   - jekyll-seo-tag
 exclude:
   - Gemfile
