@@ -1,0 +1,22 @@
+#+options: ':nil *:t -:t ::t <:t H:3 \n:nil ^:t arch:headline
+#+options: author:t broken-links:nil c:nil creator:nil
+#+options: d:(not "LOGBOOK") date:t e:t email:nil f:t inline:t num:t
+#+options: p:nil pri:nil prop:nil stat:t tags:t tasks:t tex:t
+#+options: timestamp:t title:t toc:t todo:t |:t
+#+title: 2021-11-30-dairy
+#+date: <2021-11-30 二>
+#+author: 杨振振
+#+email: yangzhenzhen01@ke.com
+#+language: en
+#+select_tags: export
+#+exclude_tags: noexport
+#+creator: Emacs 27.2 (Org mode 9.4.4)
+
+* 
+
+** 有用
+** 工程学方法
+   抓大方小逐步求精
+   编程随想
+   单一信息源不可靠 
+** 立脚点

@@ -125,10 +125,10 @@ bussiness_logic 出现指针访问异常后，go 协程会被回收，执行 `de
 ## 消息为什么会丢失？ ##
 
 
-![](/assets/go-sarama.consumer-2.png)
+![](/assets/go-sarama.consumer-3.png)
 
 - 协程 hbloop： 间隔一段时间向broker发送心跳的
-- 协程 parseResponse,responseFeeder：会将获取到的 kafka 批量消息存到内存 `[]*ConsumerMmessage{}` 中,并通过管道 `[]*ConsumerMmessage` 发送出去，应用程序从而能一条一条的消费
+- 协程 parseResponse,responseFeeder：会将获取到的 kafka 批量消息存到内存 `[]*ConsumerMmessage{}` 中,并通过管道 `chan *ConsumerMmessage` 发送出去，应用程序从而能一条一条的消费
 
 ### 原因 ###
 

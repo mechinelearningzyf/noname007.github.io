@@ -23,12 +23,13 @@ tags:
 
 基于此提炼出如下 cron 命令模板
 
-
+{% raw %}
 ``` shell
 ps aux|grep \"php /opt/www/htdocs/{}/yii {}\"|grep -v 'grep' || (php /opt/www/htdocs/{}/yii {} >> /opt/www/logs/{}/{} 2>&1 &
 
 ps aux|grep \"php /opt/www/htdocs/{}/yii {}\"|grep -v 'grep'|awk '{{print $2}}' | xargs -n 1 kill -9
 ```
+{% endraw %}
 
 使用 rust 制造如下工具：
 
@@ -37,7 +38,7 @@ ps aux|grep \"php /opt/www/htdocs/{}/yii {}\"|grep -v 'grep'|awk '{{print $2}}' 
 
 因为文件名称中不能有 `/`，故进行替换 `cmd.replace("/", "-")`
 
-
+{% raw %}
 
 ``` rust
 use std::env::{args};
@@ -74,7 +75,7 @@ ps aux|grep "php /data0/www/htdocs/force-holo/yii serve/index"|grep -v 'grep' ||
 ps aux|grep "php /data0/www/htdocs/force-holo/yii serve/index"|grep -v 'grep'|awk '{print $2}' | xargs -n 1 kill -9
 
 ```
-
+{% endraw %}
 
 
 项目地址：[https://github.com/noname007/rust-demo-cron-cmd-for-yii2-proj](https://github.com/noname007/rust-demo-cron-cmd-for-yii2-proj)
